@@ -1,0 +1,34 @@
+:root {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: #333333;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar_profile {}
+
+.navbar_links {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar_link {
+    font-weight: bold;
+    text-decoration: none;
+    color: aliceblue;
+    margin-right: 3em;
+}

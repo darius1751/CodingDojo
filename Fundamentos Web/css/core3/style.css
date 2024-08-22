@@ -1,0 +1,63 @@
+:root {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.target {
+    width: 80%;
+    margin: 0 auto;
+    /* border-radius: 2em 2em 0 0; */
+
+}
+
+.target_nav {
+    height: 9.5em;
+    background-color: #0817ee;
+    border-radius: 2em 2em 0 0;
+}
+
+.target_profile {
+    border: 0.2em solid #2eb2c4;
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+    background-image: url('assets/profile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -2em;
+    position: absolute;
+    /* bottom: 4.5em; */
+    top: 4.5em;
+    margin-left: 3.5em;
+}
+
+.target_container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.target_title {
+    margin-top: 7rem;
+    font-size: 2em;
+}
+
+.target_content {
+    width: 80%;
+    font-size: 1.5rem;
+    text-align: justify;
+    color: #61666b;
+}
+.target_content_roles{
+    font-size: 1.2em;
+    color: #969fa8;
+    font-weight: 500;
+}
+.target_options_edit {
+    cursor: pointer;
+    font-size: 1.2em;
+    height: 3rem;
+    width: 10rem;
+    border: 0;
+    margin-top: 5em;
+    
+}
