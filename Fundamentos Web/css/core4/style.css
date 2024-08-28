@@ -53,6 +53,7 @@
     margin: 0 auto;
     margin-top: 5em;
     width: 80%;
+    justify-content: space-around;
 }
 
 .profile {
@@ -67,17 +68,18 @@
     background-color: #00BFD4;
     height: 6em;
     border-radius: 0.5em .5em 0 0;
-    
+
 
 }
-.general_info, .additional_info{
+
+.section {
     border-radius: 0.5em;
-    /* box-shadow: 1px 3px 12px #333333; */
     border: 0.5px solid #e6e6e6;
     border-bottom: 0.3em solid #e6e6e6;
     padding-bottom: 3em;
     margin-bottom: 0.5em;
 }
+
 .info {
     margin-left: 1em;
     margin-top: 8em;
@@ -86,26 +88,119 @@
 .profile_img {
     width: 10em;
     height: 10em;
-    border: 0.5em solid #F7F4F8;
+    border: 0.3em solid #F7F4F8;
     border-radius: 50%;
     position: absolute;
     top: 7em;
     margin-left: 1em;
-    /* margin-bottom: 3em; */
     background-image: url(assets/profile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -1.5em;
 }
-.education{
+.profile_description{
+    padding-right: 1em;
+}
+.education {
     margin-left: 1em;
     border-bottom: 3px solid #F7F4F8;
     margin-right: 1em;
 }
-.edit{
+
+.edit {
     text-decoration: none;
     color: #4F3FFD;
 }
-.fa-gear{
+
+.fa-gear {
     width: 1em;
+    background-size: 1em;
+    background-color: red;
+    background-image: url('assets/configureIcon.svg');
+    background-repeat: no-repeat;
+}
+
+.connections {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 1em;
+}
+.connections_all{
+    max-height: 40%;
+    overflow-y: scroll;
+}
+.petition, .connection {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5em;
+}
+
+.user_image, .petition_image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    display: inline-block;
+    border: 0.15em solid #00BFD4;
+    border-radius: 1em;
+    width: 4.25em;
+    height: 4.25em;
+    margin-right: 1em;
+}
+.petition_image{
+    border-radius: 50%;
+    border-color: #333333;
+}
+.user_image1{
+    background-image: url('https://statics.koreanbuilds.net/tile_200x200/Katarina.webp');
+}
+.user_image2{
+    background-image: url('https://i.pinimg.com/736x/60/8a/a0/608aa08e9e3a529fe5f5e334579e1f2f.jpg');
+    
+}
+.user_image3{
+    background-image: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gwen_0.jpg');
+}
+.user_image4{
+    background-image: url('https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/characters/camille/skins/base/images/camille_splash_centered_0.jpg');
+}
+
+.user_image5{
+    background-image: url('https://i.pinimg.com/236x/11/e2/10/11e210a8f2fe66a30076782409ba4a2a.jpg');
+}
+.user_image6{
+    background-image: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Irelia_0.jpg');
+}
+.user_image7{
+    background-image: url('https://www.lolvvv.com/_next/image?url=https%3A%2F%2Fddragon.leagueoflegends.com%2Fcdn%2Fimg%2Fchampion%2Fsplash%2FDarius_15.jpg&w=1200&q=75');
+}
+.user_image8{
+    background-image: url('https://pbs.twimg.com/media/BvjOpRXIIAAYnsg.jpg');
+}
+
+.ml {
+    margin-left: 1em;
+}
+.ml-2{
+    margin-left: 2em;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 2em;
+    height: 2em;    
+    margin-left: 1.5em;
+    background-repeat: no-repeat;
+}
+
+.btn-accept {
+    background-image: url('assets/accept.svg');
+}
+
+.btn-denied {
+    background-image: url('assets/denied.svg');
+}
+.petition_actions{
+    margin-left: 3em;
 }
