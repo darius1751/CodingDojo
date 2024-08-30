@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Tiempo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h2>Tiempo Local</h2>
+        <ul class="navbar-items">
+            <li class="navbar-item">Buenos Aires</li>
+            <li class="navbar-item">Ciudad de Mco</li>
+            <li class="navbar-item">Santiago</li>
+            <li class="navbar-item">Sao Paulo</li>
+            <li class="navbar-item">Quito</li>
+        </ul>
+        <p>Mostrar temperatura en </p>
+        <select name="typeTemp" id="typeTemp" class="typeTemp">
+            <option value="C">°C</option>
+            <option value="F">°F</option>
+        </select>
+    </div>
+
+    <main class="container">
+        <h2 id="actualCity" class="city">Buenos Aires</h2>
+        <ol class="days">
+            <li class="day">
+                <div class="day_info">
+                    <img src="assets/images/cloud.svg" alt="Nubes" class="day-info_img">
+                    <p><strong>Hoy</strong></p>
+                    <p class="day-state">Nublado</p>
+                    <p>
+                        <span id="minTemp">15°C°</span>
+                        <span id="maxTemp">22°C°</span>
+                    </p>
+                </div>
+
+            </li>
+            <li class="day">
+                <div class="day_info">
+                    <img src="assets/images/cloud-rain.svg" alt="Nubes con lluvia" class="day-info_img">
+                    <p><strong>Ma&ntilde;ana</strong></p>
+                    <p class="day-state">Lluvioso</p>
+                    <p>
+                        <span id="minTemp">13°C°</span>
+                        <span id="maxTemp">20°C°</span>
+                    </p>
+                </div>
+            </li>
+            <li class="day">
+                <div class="day_info">
+                    <img src="assets/images/cloud-bolt.svg" alt="" class="day-info_img">
+                    <p><strong>Mi&eacute;rcoles</strong></p>
+                    <p class="day-state">Tormentas</p>
+                    <p>
+                        <span id="minTemp">11°C°</span>
+                        <span id="maxTemp">18°C°</span>
+                    </p>
+                </div>
+
+            </li>
+            <li class="day">
+                <div class="day_info">
+                    <img src="assets/images/cloud.svg" alt="" class="day-info_img">
+                    <p><strong>Jueves</strong></p>
+                    <p class="day-state">Parcialmente Nublado</p>
+                    <p>
+                        <span id="minTemp">14°C°</span>
+                        <span id="maxTemp">21°C°</span>
+                    </p>
+                </div>
+
+            </li>
+            <li class="day">
+                <div class="day_info">
+                    <img src="assets/images/sun.svg" alt="" class="day-info_img">
+                    <p><strong>Viernes</strong></p>
+                    <p class="day-state">Soleado</p>
+                    <p>
+                        <span id="minTemp">17°C°</span>
+                        <span id="maxTemp">24°C°</span>
+                    </p>
+                </div>
+
+            </li>
+        </ol>
+    </main>
+    <div id="cookies">
+        <p class="cookie-message">Detente! Tiempode cook. Usamos cookies (tristemente, no las comestibles) para personalizar contenido y
+            anuncios proporcionar funciones de redes sociales y anaizar nuestro trafico.</p>
+        <a>Lee Mas...</a>
+        <button id="botonCookies">Acepto</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
