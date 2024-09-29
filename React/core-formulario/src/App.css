@@ -1,0 +1,21 @@
+form {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3em;
+}
+
+.btn-create {
+    background-color: #1651A8;
+    height: 2.5em;
+    width: 30%;
+    cursor: pointer;
+    margin-top: 1em;
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+.title{
+    text-align: center;
+}
