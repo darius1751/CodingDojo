@@ -1,0 +1,48 @@
+.toogle-theme {
+    position: absolute;
+    bottom: 0.5em;
+    right: 3em;
+    background-color: gray;
+    height: 2em;
+    width: 100px;
+    border-radius: 7px;    
+}
+
+.toogle-theme__input {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.toogle-theme__switch {
+    position: absolute;
+    background-color: whitesmoke;
+    width: 1.6em;
+    height: 1.6em;
+    border-radius: 100%;
+    left: 1em;
+    bottom: 4px;
+    transition: .4s;
+    -webkit-transition: .4s;
+}
+
+.toogle-theme__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 2;
+}
+
+.toogle-theme__input:checked + .toogle-theme__switch {
+    left: 4em;
+    background-color: #464343;
+}
+
+.toogle-theme__icon {
+    position: absolute;
+    bottom: 0.5em;
+    right: .4em;
+    font-size: 1.5em;
+}
