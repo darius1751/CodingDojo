@@ -1,0 +1,59 @@
+.card {
+    width: 16em;
+    max-width: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 7px;
+    padding: 7px 7px 1px 7px;
+    margin: 1em;
+    border: 1px solid light-dark(gray, transparent);
+    box-shadow: 0px 0px 5px light-dark(black, transparent);
+}
+
+.card__title {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.card__price {
+    margin-top: 0.5em;
+    color: gray;
+}
+
+.card__description {
+    width: 90%;
+    text-align: justify;
+}
+
+.card__stock--available,
+.card__stock--unavailable {
+    font-weight: bold;
+}
+
+.card__stock--available {
+    color: #0CA94C;
+}
+
+.card__stock--unavailable {
+    color: #E13D50;
+}
+
+.card__btn {
+    margin: 0.5em auto;
+    background-color: #0078FB;
+    width: 5em;
+    color: white;
+}
+
+.card__btn:disabled {
+    background-color: #CCCCCC;
+    cursor: unset;
+}
+
+.card__btn:enabled:hover {
+    background-color: #2486ee;
+}

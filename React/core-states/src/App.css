@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.title {
+  text-align: center;
+  color: light-dark(#00007D, #8b8bce);
+}
