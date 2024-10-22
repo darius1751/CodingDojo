@@ -1,0 +1,26 @@
+.title {
+  max-width: 100%;
+  font-size: 5em;
+}
+
+.content {
+  width: 40em;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.subtitle {
+  color: #00A086;
+  font-size: 3em;
+}
+
+.items {
+  font-size: 2em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  margin-bottom: 0.5em;
+}
