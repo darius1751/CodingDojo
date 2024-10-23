@@ -1,0 +1,21 @@
+.pagination {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.btn {
+    text-align: center;
+    display: inline-block;
+    height: 1.5em;
+    min-width: 4em;
+    padding: 0.3em;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 7px;
+    background-color: green;
+    color: white;
+    padding-top: 0.2em;
+    box-sizing: border-box;
+    margin: 1em;
+}

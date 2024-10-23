@@ -1,0 +1,14 @@
+.art-page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image {
+    display: block;
+    width: 40em;
+    height: 40em;
+    max-width: 100%;
+    margin-top: 10em;
+    margin-bottom: 2em;
+}
