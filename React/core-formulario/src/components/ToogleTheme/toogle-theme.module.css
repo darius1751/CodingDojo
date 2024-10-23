@@ -46,3 +46,9 @@
     right: .4em;
     font-size: 1.5em;
 }
+:root:has(.dark){
+    color-scheme: dark;
+}
+:root:has(.light){
+    color-scheme: light;
+}

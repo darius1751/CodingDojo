@@ -1,12 +1,12 @@
-import { Input } from './components/Input/Input';
-import { useForm } from './hooks/useForm';
 import { FormEvent, useState } from 'react';
+import { useForm } from './hooks/useForm';
+import { Input } from './components/Input/Input';
 import { ToogleTheme } from './components/ToogleTheme/ToogleTheme';
-import './App.css';
-import { validate } from './utils/validate';
 import { validations } from './constants/validations';
+import { validate } from './utils/validate';
 import { ValidationError } from './interfaces/validation-error';
-// import { Validation } from './interfaces/validation';
+import './App.css';
+
 const initialState = {
   name: '',
   lastname: '',
@@ -17,7 +17,8 @@ const initialState = {
 export const App = () => {
   const { state, handleChange } = useForm(initialState);
   const { name, lastname, email, password, confirmPassword } = state;
-  const [theme, setTheme] = useState(false);
+  const isDark = window.matchMedia('(prefers-color-scheme:dark)').matches;
+  const [theme, setTheme] = useState(isDark);
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const errors: ValidationError[] = [];
@@ -34,13 +35,13 @@ export const App = () => {
           message: `La contraseña debe coincidir con el contenido del campo de confirmación de contraseña`
         });
     }
-    if (errors.length) 
+    if (errors.length)
       alert(errors.map(({ message }) => message).join('\n'));
     else
       alert('Informacion registrada correctamente.');
   }
   return (
-    <div className={`page index-page ${theme ? 'dark' : 'light'}`}>
+    <div className={`page index-page`}>
       <ToogleTheme theme={theme} setTheme={setTheme} />
       <h1>Bienvenido a la Liga de Superhéroes</h1>
       <form onSubmit={handleSubmit}>
