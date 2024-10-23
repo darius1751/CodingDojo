@@ -1,13 +1,11 @@
-import { useEffect, useState } from 'react';
-import styles from './toogleTheme.module.css';
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import styles from './toogleTheme.module.css';
 export const ToogleTheme = () => {
-    const [theme, setTheme] = useState(false);
-    useEffect(() => {
-        if (window.matchMedia('(prefers-color-scheme:dark)'))
-            setTheme(true);
-    }, [])
+    const isDark = window.matchMedia('(prefers-color-scheme:dark)').matches;
+    const [theme, setTheme] = useState(isDark);
+    
     const toogleTheme = () => {
         setTheme(!theme);
     }

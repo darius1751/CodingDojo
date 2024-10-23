@@ -3,9 +3,9 @@ import { NoteForm } from './components/NoteForm/NoteForm'
 import { Note as NoteModel } from './interfaces/Note';
 import { Note } from './components/Note/Note';
 import { PriorityNoteFilter } from './interfaces/PriorityNoteFilter';
-import './App.css'
 import { FilterNotes } from './components/FilterNotes/FilterNotes';
 import { ToogleTheme } from './components/ToogleTheme/ToogleTheme';
+import './App.css'
 
 export const App = () => {
   const [notes, setNotes] = useState<NoteModel[]>([]);
