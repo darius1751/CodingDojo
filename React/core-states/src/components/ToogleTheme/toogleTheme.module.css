@@ -36,11 +36,11 @@
     left: 4em;
 }
 
-html:has(.toogle-theme__input:checked) {
+:root:has(.toogle-theme__input:checked) {
     color-scheme: dark;
 }
 
-html:has(.toogle-theme__input) {
+:root:has(.toogle-theme__input) {
     color-scheme: light;
 }
 

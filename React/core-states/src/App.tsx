@@ -1,14 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { ToogleTheme } from './components/ToogleTheme/ToogleTheme'
 import { Card } from './components/Card/Card'
 import './App.css'
 
 export const App = () => {
-  const [theme, setTheme] = useState(false);
-  useEffect(() => {
-    if (window.matchMedia('(prefers-color-scheme:dark)'))
-      setTheme(true);
-  }, [])
+  const [theme, setTheme] = useState(window.matchMedia('(prefers-color-scheme:dark)').matches);
   return (
     <div className='page'>
       <ToogleTheme theme={theme} setTheme={setTheme} />
