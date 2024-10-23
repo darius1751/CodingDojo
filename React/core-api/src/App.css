@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  max-width: 100%;
+  width: 25em;
+  margin: 0 auto;
+  row-gap: 1em;
+  align-items: center;
+}
+
+.not-image,
+.image {
+  max-width: 100%;
+  width: 25em;
+  height: 25em;
+  border-radius: 1em;
+  box-shadow: 0px 0px 7px 1px gray;
+}
+
+.not-image {
+  background-color: gray;
+}
+
+.btn-fetch {
+  display: inline-block;
+  background-color: #00BEFC;
+  border: transparent;
+  border-radius: 1em;
+  height: 2.5em;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  
+}
