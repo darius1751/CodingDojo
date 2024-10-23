@@ -1,0 +1,49 @@
+.toogle-theme {
+    position: fixed;
+    bottom: 1.5em;
+    right: 4em;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.toogle-theme__input {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.toogle-theme__switch {
+    position: absolute;
+    width: 2.5em;
+    height: 2.5em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #585050;
+    border-radius: 100%;
+}
+
+.toogle-theme__icon--dark,
+.toogle-theme__icon--light {
+    font-size: 1.5em;
+    position: relative;
+    top: 0.3em;
+}
+
+.toogle-theme__icon--dark {
+    color: skyblue;
+}
+
+.toogle-theme__icon--light {
+    color: yellow;
+}
+:root:has(.toogle-theme__icon--light){
+    color-scheme: light;
+}
+:root:has(.toogle-theme__icon--dark){
+    color-scheme: dark;
+}
