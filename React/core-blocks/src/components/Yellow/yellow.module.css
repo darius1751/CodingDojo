@@ -1,0 +1,6 @@
+.yellow{
+    background-color: #FFCD30;
+    grid-area: yellow;
+    height: 8em;
+    max-width: 100%;
+}

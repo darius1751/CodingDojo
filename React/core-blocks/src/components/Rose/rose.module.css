@@ -1,0 +1,7 @@
+.rose {
+    display: grid;
+    background-color: #FF1292;
+    grid-area: rose;
+    align-items: center;
+    justify-content: space-between;
+}

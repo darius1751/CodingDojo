@@ -1,0 +1,15 @@
+.template {
+    padding: 0.5em;
+    margin: 0 auto;
+    margin-top: 2em;
+    max-width: 100%;
+    gap: 1em;
+    width: 40em;
+    max-height: 100%;
+    background-color: #EAEAEA;
+    display: grid;
+    grid-template-areas: 
+    "yellow yellow yellow"
+    "rose rose skyblue"
+    "rose rose skyblue";
+}
